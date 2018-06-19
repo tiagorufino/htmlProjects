@@ -1,0 +1,29 @@
+@keyframes example{
+    0% {background-color: red; width: 300px;}
+    25% {background-color: yellow}
+    50% {background-color: blue}
+    100% {background-color: green; width: 600px;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse
+}
+
+a:hover, a:active {
+    background-color: orange;
+    animation-name: rollover;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}

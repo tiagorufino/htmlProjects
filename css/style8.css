@@ -1,0 +1,56 @@
+body{
+       
+        background-color:#FFF000;
+        column-count: 3;
+        column-width: 300px;
+        column-gap: 60px;
+      }
+
+header, footer{
+    
+    column-span:all;
+}
+    
+header{
+    
+     font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: blue;
+} 
+    
+
+#paragraph1{
+    font-family: monospace;
+} 
+
+#paragraph3{
+font-family: fantasy;    
+}
+
+            
+.even{
+    background-color: lemonchiffon;
+    border: black 2px dashed;
+}
+
+article{
+    background-color: lightblue;
+    
+}
+
+@keyframes example{
+    0% {background-color: red; width: 300px;}
+    25% {background-color: yellow}
+    50% {background-color: blue}
+    100% {background-color: green; width: 600px;}
+}
+
+
+.animation {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

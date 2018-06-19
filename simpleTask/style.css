@@ -1,0 +1,41 @@
+body{
+    background-color: azure;
+}
+
+h1, h2, h3{
+    color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: right;
+    font-size: 16px;
+}
+
+a:link {
+    color: #66ef66;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color: #fe89cc;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color: #c53e3e;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:link {
+    color: #fec057;
+    background-color: transparent;
+    text-decoration: none;
+}
