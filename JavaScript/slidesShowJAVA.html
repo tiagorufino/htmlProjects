@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Slideshow using JavaScript</title> 
+    
+</head>   
+ <body>
+     
+    <img name="Slide" id="slideshow" src="images/images/img_1.jpg" width="200px" height="100">
+     
+     
+    <button id="play" onclick="play()">PLAY</button>
+    <button id="pause" onclick="pause()">Pause</button>
+    <button id="mute" onclick="mute()">Mute</button>
+     <button id="unmute" onclick="unmute()">UnMute</button>
+     <audio id="audio" src="songs/Run%20Amok.mp3"></audio>
+     <script>
+        
+         let audio=document.getElementById("audio");
+        
+         
+         
+         
+     function play(){
+         audio.play();  
+     }
+         
+          function pause(){
+         audio.pause();  
+     }
+         
+          function mute(){
+         audio.muted=true;  
+     }
+         
+        function unmute(){
+         audio.muted=false;  
+     } 
+         
+        let i=0;
+         let slides=document.getElementById("slideshow");
+         let myArray=["images/images/img_2.jpg","images/images/img_3.jpg",
+                    "images/images/img_4.jpg","images/images/img_5.jpg","images/images/img_1.jpg"];
+         
+      function slider(){
+          
+          slides.setAttribute("src", myArray[i]);
+          
+          i++;
+          if(i==myArray.length){
+              i=0;
+          }
+      } 
+         
+         let interval = setInterval(slider, 3000);
+         
+     </script>
+     
+
+     
+</body>
+</html>

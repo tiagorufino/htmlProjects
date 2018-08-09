@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>user  Created Objects</title>    
+</head>
+<body>
+    
+    <h2 id="demo"></h2>
+    
+    
+    <script>
+        
+        let Student1 = {Name: "Mark",
+                        StudID:"12456",
+                        grade:"60%"};
+        
+        let Student2 = {Name: "Tony",
+                        StudID:"13456",
+                        grade:"72%"};
+        
+        let Student3 = {Name: "Maria",
+                        StudID:"14244",
+                        grade:"81%"};
+      
+        
+        console.log(Student1);
+        console.log(Student2);
+        console.log(Student3);
+        
+        function studentInfo(){
+        console.log(Student1.Name + " holding the ID: "+ Student1.StudID + " has recived a grade of " +Student1.grade);
+       
+        }
+        Student1.logDetails=studentInfo;
+        Student1.logDetails();
+        Student2.logDetails=studentInfo;
+        Student2.logDetails();
+        Student3.logDetails=studentInfo;
+        Student3.logDetails();
+        
+        
+        
+    </script>
+
+    
+</body>
+</html>

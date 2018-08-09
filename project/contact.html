@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <script>
+            function cleanFName(){
+                document.getElementById('fname').value='';
+            }
+            function cleanLName(){
+                document.getElementById('lname').value='';
+            }
+            function cleanEmail(){
+                document.getElementById('email').value='';
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>Please sent a email or follow me in my social midias and share with me your opinion about my work.</p>
+            <div class="contactClass">
+                <form action="mailto:tiag.xiquin@gmail.com" method="post" enctype="text/plain">
+                    First Name:<br>
+                    <input id="fname" type="text" name="fname"  value="First name..." onclick="cleanFName()" onfocus="if(this.value == 'First Name...'){this.value = '';}" onblur="if(this.value == ''){this.value='First Name...';}"><br>
+                    Last Name:<br>
+                    <input id="lname" type="text" name="lname" value="Last name..." onclick="cleanLName()" onblur="if(value == ''){this.value='Last name...';}"><br>
+                    E-mail:<br>
+                    <input id="email" type="email" name="email" value="E-mail" onclick="cleanEmail()" onfocus="if(this.value == 'E-mail...'){this.value = '';}" onblur="if(this.value == ''){this.value='E-mail...';}"><br>
+                    Comment:<br>
+                    <textarea id="commentArea" rows="10" cols="70" value="" onfocus="if(this.value == 'Type your comment here...'){this.value = '';}" onblur="if(value == ''){value='Type your comment here...';}" >Type your comment here...</textarea><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+            <div class="frameClass">
+                <a href="https://www.instagram.com/tiago_xiquin/" target="_blank">
+                    <img src="images/logos/instagram.png" width="320px" height="240px">
+                </a>
+                <br>
+                <a href="https://www.facebook.com/tiago.rufino" target="_blank">
+                    <img src="images/logos/facebook.PNG"  width="320px" height="240px">
+                </a>
+            </div>
+        </div>
+    </body> 
+</html>

@@ -1,0 +1,227 @@
+/*Dimension for the paralax. and the Font.*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 18px/1.8 "Shrikhand", sans-serif;
+    color: #310;
+    width: 100%;
+}
+
+/*Defination for the images in the page.*/
+.image_1, .image_2, .image_3, .image_4, .image_5 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*The first picture in the menu. Proportion 100%*/
+.image_1 {
+    background-image: url("../images/index/fundo_cliffs.jpg");
+    min-height: 100%;
+}
+
+/*Second image. Has a minimum height because the text. for to make th text in the middle and the image not that big*/
+.image_2 {
+    background-image: url("../images/index/fundo_leblon.JPG");
+    min-height: 400px;
+}
+
+/*Third image. Has a minimum height because the text. for to make th text in the middle and the image not that big*/
+.image_3 {
+    background-image: url("../images/index/fundo_river.jpg");
+    min-height: 400px;
+}
+
+/*Third image. Has a minimum height because the text. for to make th text in the middle and the image not that big*/
+.image_4 {
+    background-image: url("../images/index/fundo_sligo.jpg");
+    min-height: 400px;
+}
+
+/*This is a video, but I had put a image for to keep the pattern*/
+.image_5 {
+    background-color: white;
+    min-height: 100%;
+}
+
+/*The common with the divs. Justify text in center and padding.*/
+.div_1, .div_2, .div_3, .div_4{
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+
+/*First Div. Apresentation and the sign. Its clear div*/
+.div_1 {
+    color: #777;
+    background-color:white;
+}
+
+/*About me. This div is more dark. Has a article and plain text.*/
+.div_2 {
+    color:#ddd;
+    background-color:#282E34;
+}
+
+/*This div depends of the contents. The height change based in the page open.*/
+.div_3 {
+    color: white;
+    background-color:#282E34;
+    height: auto;
+}
+
+/*The external page will be opened in this div. Fixed the issue in the css which make the content pass over the div*/
+.conteudo{
+    height: auto;
+    overflow: hidden;
+}
+
+/*The contacxt div. Depends for the contents also*/
+.div_4 {
+    color: white;
+    background-color:#282E34;
+    height: auto;
+}
+
+/*The position of the div which has the topics */
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+/*The topics general. Size of the font, colour, padding and spacing between the letters.*/
+.caption span.border, span.border1, span.border2, span.border3, span.border5  {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 29px;
+    letter-spacing: 10px;
+}
+
+/**/
+.caption span.border3{
+    position: relative;
+    bottom: 162px;
+}
+
+/*The links in the galery*/
+.caption span.border4{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    letter-spacing: 10px;
+    font-size: 18px;
+    position: relative;
+    bottom: 181px;
+}
+
+/*The tank you topic. It is located in the bottom*/
+.caption span.border5{
+    position: relative;
+    bottom: -310px;
+}
+
+/*Define the introdution size and colour*/
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    color: #111;
+}
+
+/*Define the color of the rodape*/
+.rodape{
+    background-color:white;
+}
+
+/*Hover for change the colour of the button*/
+.caption span.border4:hover{
+    background-color: #BAA7A3;
+}
+
+/*Visited css for change the colour after clicked.*/
+span.border4.visited{
+    background-color: #BAA7A3;
+    color: black;
+}
+
+/*Hover for change the colour of the button.  For the page codes.html*/
+.caption span.borderCode:hover{
+    background-color: #BAA7A3;
+}
+
+/*Visited css for change the colour after clicked. For the page codes.html*/
+span.borderCode.visited{
+    background-color: #BAA7A3;
+    color: black;
+}
+
+/* For IPad and screens with 768 x 1024 */
+@media only screen and (max-device-width: 1024px) {
+    /*Change the configuration for tables. The images roll in scroll mode and change the size.*/
+    .image_1, .image_2, .image_3, .image_4, .image_5 {
+        background-attachment: scroll;
+        width: 767px;
+        min-height: 786px;
+    }
+    
+    /*The font in the html and body change. start to be more round*/
+    body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 25px/1.8 "Galada", sans-serif;
+        color: #777;
+    }
+
+    /*The iamges 2 and 4 have to be smarller*/
+    .image_2, .image_4 {
+        width: 767px;
+        min-height: 452px;
+    }
+
+    /*The div 1 and 2 too.*/
+    .div_1, .div_2 {
+        width: 589px;
+        padding-left: 97px;
+    }
+    
+    /*The position of the topic need to be redenred*/
+    .caption span.border {
+        position:relative;
+        bottom:29px;
+    }
+
+    /*Reorganize the position of the thankyou topic*/
+    .caption scan.border5{
+        position:relative;
+        bottom: -146px;
+    }
+}
+
+/* For phones */
+@media only screen and (max-device-width: 414px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+    .details{
+        background-color: #4CAF50;
+        padding: 6px 7px;
+        width: 230px;
+        text-align: left
+        text-align: inherit;
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Arial", sans-serif;
+        color: #777;
+        width: 117%;
+    }
+}

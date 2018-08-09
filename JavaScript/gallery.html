@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Gallery</title> 
+    <style>
+        #whitebox{
+            background-color: antiquewhite;
+            background-image: url(images/images/img_1.jpg);
+            background-size: 100% auto;
+            width: 350px;
+            height: 160px;
+            font-family: cursive;
+            font-size: 50px;
+            color: aquamarine;
+        }
+    </style>
+</head>   
+ <body>
+     <div id="whitebox"> My Gallery</div>
+     
+    <script>
+        
+    let myImages =["images/images/img_1.jpg","images/images/img_2.jpg",
+                    "images/images/img_3.jpg","images/images/img_4.jpg","images/images/img_5.jpg"]; 
+     
+        let i=0;
+        function next(){
+            
+            if (i<myImages.length -1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+            
+            document.getElementById("whitebox").style.background="url(" +myImages[i]+")";
+            document.getElementById("whitebox").style.backgroundSize="100% auto";       
+    
+        }
+               
+        
+        function prev(){
+            
+            if(i>0){
+                i--;
+            }
+            else{
+                i=myImages.length-1;
+            }
+            document.getElementById("whitebox").style.background="url("+myImages[i]+")";
+            document.getElementById("whitebox").style.backgroundSize="100% auto"; 
+        }
+            
+            
+    </script>
+     <button id="prev" onclick="prev()">Previous</button>
+     <button id="next" onclick="next()">Next</button>
+     
+ </body>
+ </html>

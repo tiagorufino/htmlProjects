@@ -1,0 +1,139 @@
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+.login-page {
+    background-image: url('../images/fundo_river.jpg');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}
+
+.login-page button{
+    background-color: chartreuse;
+}
+
+.login-page h1{
+    font-weight: 300;
+    color: darkslategray;
+}
+
+.login-page p{
+    font-weight: 200;
+    color: darkblue;
+}
+
+.login-page h1 small{
+    color: gray;
+}
+
+.login-page .form-group{
+    padding: 8px 0;
+}
+
+.login-page .form-content{
+    padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+    .login-page{
+        background-image: url('../images/fundo_river.jpg');
+        background-repeat: no-repeat;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        padding: 3em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .login-page {
+        background-image: url('../images/fundo_river.jpg');
+        background-repeat: no-repeat;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        padding: 3em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+   .login-page {
+        background-image: url('../images/fundo_river.jpg');
+        background-repeat: no-repeat;
+        bottom: 0;
+        color: black;
+        left: 0;
+        overflow: auto;
+        padding: 3em;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

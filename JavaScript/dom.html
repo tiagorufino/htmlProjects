@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Document Object Model</title>
+</head>
+<body>
+    
+    <h1 id="header">Welcome</h1>
+    <p id="hidden1">This site uses JavaScript</p>
+    <p id="hidden2">JavaScript is useful</p>
+    
+    
+    <script>
+        document.getElementById("header").innerHTML="The Document obeject model is tree-like structure that represents all elements on a webpage"; //will replace contents of h1.
+        alert("The header is a <h1> Object"); //will alert on page.
+        console.log("Hello World");
+        console.log("You");
+        console.log("Can");
+        console.log("DO IT");
+        
+        console.log(document.getElementById("hidden1").innerHTML); //create a console log and isntead of logging a string  we ask it to log the inner html of the element.
+        document.getElementById("hidden1").style.color="green";
+        
+        document.getElementById("hidden2").style.display="none";//this will hide the paragraph.
+        document.getElementById("hidden2").style.color="blue";
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> A poem </title> 
+       <style>
+           input{
+               border: 1px black solid;
+            
+           }
+    </style>
+</head>  
+<body>
+    
+    
+    Roses: <input  type="text" id="FirstFlower" value="Red"><br>
+    Violets: <input  type="text" id="SecondFlower" value="Blue"><br>
+    
+    <button onClick="poem()"> Create a poem</button>
+    <h1 id="demo">Roses are <span id="color1"></span> and violets are <span id="color2"></span></h1>
+    
+    
+ 
+    
+    
+    <script>
+    
+        
+         document.getElementById("demo").style.display="none";
+        
+    function poem(){
+        
+        let roses =document.getElementById("FirstFlower").value;
+        let violets=document.getElementById("SecondFlower").value;
+        
+        document.getElementById("demo").style.display="block";
+        
+        document.getElementById("color1").innerHTML=roses; 
+        document.getElementById("color2").innerHTML=violets;
+        
+        document.getElementById("color1").style.color=roses;
+        document.getElementById("color2").style.color=violets;
+        };
+   
+    </script>
+    
+    
+
+</body>
+</html>

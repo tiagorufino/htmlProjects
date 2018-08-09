@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Vanishing Circle</title> 
+    <style>
+     
+        #circle{
+            border: black solid 1px;
+            width: 60px;
+            height: 60px;
+            background-color: hotpink;
+            border-radius: 30px;        
+        }
+        
+         #clickme{
+     display: none;
+     
+     }
+        </style>
+    </head>   
+ <body>
+    
+  
+    <div id="circle"></div>
+     
+     <button id="clickme">Click Me!!!</button>
+     
+     
+        <script>
+        document.getElementById("circle").onclick=function(){
+            document.getElementById("circle").style.display="none";
+            document.getElementById("clickme").style.display="block";
+        }
+        
+        document.getElementById("clickme").onclick=function(){
+            document.getElementById("circle").style.display="block";
+            document.getElementById("clickme").style.display="none";
+            
+            
+        }
+        </script>
+    
+ </body>
+</html>

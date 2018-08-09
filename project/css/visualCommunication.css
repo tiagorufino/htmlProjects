@@ -1,0 +1,44 @@
+body{
+    height: 400px;
+}
+
+.articleClass{
+    float: left;
+}
+
+.pictures{
+    width: 480px;
+    height: 360px;
+}
+
+.mySlides{
+    text-align: left;
+}
+
+.sideGalery{
+    float: right;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    
+    body{
+        height: 587px;
+    }
+    .pictures{
+        width: 360px;
+        height: 240px;
+    }
+    
+    .articleClass{
+        float: none;
+    }
+    
+    .sideGalery{
+        float: none;
+    }
+    .mySlides{
+        text-align: center;
+    }
+    
+}

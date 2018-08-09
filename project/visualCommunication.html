@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/visualCommunication.css">
+    </head>
+    <body>
+        <h1>Visual Communication</h1>
+        <article class="articleClass">
+            <p>The Visual Communication Subject is a subject which teach us <br>
+            about the way to communicate and share this information.<br>
+                <br>
+            The  way the people understand the information and how they share that.<br>
+            <br>
+            The gallery show all the images used in the course. As is possible <br>
+            to see the evolution and the changes in the images and the colours<br>
+            also the way I had see the frames and the components, lines, dots, etc. <br>
+            <br>
+             I would like to inser some pictures which I had taken but those<br>
+            will not be part of the subject.  
+            </p>
+            <br>
+        </article>
+        <div class="sideGalery">
+            <div class="mySlides">
+                <img src="images/gallery/bohemia_final.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/historical_2.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/historical_final.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/modern_0.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/modern_1.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/modern_2.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/modern_3.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/modern_4.jpg" class="pictures">
+            </div>
+            <div class="mySlides">
+                <img src="images/gallery/modern_final.jpg" class="pictures">
+            </div>
+            <div>
+                <a onclick="nextPicture(-1)">&#10094;</a>
+                <a onclick="nextPicture(1)" style="float: right">&#10095;</a>
+            </div>
+        </div>
+        <script>
+            var counter = 1;
+            runPictures(counter);
+
+            function nextPicture(n) {
+                runPictures(counter += n);
+            }
+
+            function currentSlide(n) {
+                runPictures(counter = n);
+            }
+
+            function runPictures(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    counter = 1
+                }
+                if (n < 1) {
+                    counter = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[counter-1].style.display = "block";
+            }
+        </script>
+    </body>
+</html>

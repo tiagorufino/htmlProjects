@@ -1,0 +1,32 @@
+#div1, #div2, #div3, #div4, #div5, #div6{
+    width: 100px;
+    height: 90px;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    text-align: left;
+    animation: mymove 4s 0s infinite;
+}
+
+/* Standard syntax */
+#div1 {animation-delay: 0s;}
+#div2 {animation-delay: 2s;}
+#div3 {animation-delay: 0s;}
+#div4 {animation-delay: 2s;}
+#div5 {animation-delay: 0s;}
+#div6 {animation-delay: 2s;}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: -500px}
+    to {left: -80px;}
+}
+
+.articleClass{
+    float: left;
+}
+
+.sideGalery{
+    float: right;
+}

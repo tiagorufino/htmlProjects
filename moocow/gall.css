@@ -1,0 +1,38 @@
+#gallery {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 100px auto;
+    border: 0px solid black;
+}
+
+#navigation {
+    width: 100px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#navigation li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    clear: both;
+}
+
+#navigation li a img {
+    display: block;
+    border: none;
+}
+
+#navigation li a {
+    display: block;
+}
+
+#full-picture {
+    width: 440px;
+    height: 320px;
+    overflow: hidden;
+    float:left;
+}

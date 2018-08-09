@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Variables</title>
+    
+    <style>
+        input{
+            border-color: black;
+            border-width: 1.4px;
+            padding: inherit;
+        }
+    </style>
+</head>
+<body>
+    
+    
+  
+    
+<h1>What is today's wheather lie?</h1>
+<button id="button">Click here</button><p></p>
+    
+      Today: <input  type="text" id="today "><br>
+    Tomorrow: <input  type="text" id="tomorrow "><br>
+    NextWeek: <input  type="text" id="nextWeek "><br>
+    
+<p>Today's wheather is <span id="content1"></span></p> 
+<p>Tomorrow's wheather is <span id="content2"></span></p> 
+<p>It is likely that next week there will be <span id="content3">
+</span></p>    
+    
+    <script>
+        let today=document.getElementById("today").value;
+        console.log(today);
+        
+        let tomorrow=document.getElementById("tomorrow").value;
+        console.log(tomorrow);
+      
+        let nextWeek=document.getElementById("nextWeek").value;
+        console.log(nextWeek);
+        
+        document.getElementById("button").onclick=function(){
+            
+          document.getElementById("content1").innerHTML=today;
+           document.getElementById("content2").innerHTML=tomorrow; 
+            document.getElementById("content3").innerHTML=nextWeek;
+        }
+    </script>
+    
+    
+<p>The wheather today is <span id="content2"></span></p>  
+<p id="content3"></p> 
+    
+    <script>
+       // alert ("Welcome to the wheather predictor!");
+        
+    let = wheather1 = "rainning"; wheather2= "Wind"; wheather3 = "Sunny";
+    let x=5; y=6; z=x+y;
+    console.log(x);
+    console.log(y); 
+    console.log(z);  
+        
+        document.getElementById("content1").innerHTML="The wheather yesterday was "+wheather1;
+        document.getElementById("content2").innerHTML=wheather2;
+        document.getElementById("content3").innerHTML=wheather3;
+        
+        x=undefined;
+        console.log(x);
+    </script>
+    
+</body>
+</html>

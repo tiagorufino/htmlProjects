@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Variables</title>
+    
+    <style>
+        input{
+            border-color: black;
+            border-width: 1.4px;
+            padding: inherit;
+        }
+    </style>
+</head>
+<body>
+    
+    Today: <input  type="text" id="today" value="Rain"><br>
+    Tomorrow: <input  type="text" id="tomorrow" value="Sunny"><br>
+    NextWeek: <input  type="text" id="nextWeek" value="Wind"><br>
+  
+    
+ <h1>What is today's wheather?</h1>
+    
+<button id="button">Click here</button><br>
+    
+    
+    
+<p>Today's wheather is <span id="content1"></span></p> 
+<p>Tomorrow's wheather is <span id="content2"></span></p> 
+<p>It is likely that next week there will be <span id="content3">
+</span></p>    
+    
+    <script>
+        
+        document.getElementById("button").onclick=function(){ // goes to get the value before you click in the button.
+             
+            let today=document.getElementById("today").value;
+            console.log(today);
+        
+            let tomorrow=document.getElementById("tomorrow").value;
+            console.log(tomorrow);
+      
+            let nextWeek=document.getElementById("nextWeek").value;
+            console.log(nextWeek);
+             
+         document.getElementById("content1").innerHTML=today;
+           document.getElementById("content2").innerHTML=tomorrow; 
+            document.getElementById("content3").innerHTML=nextWeek;
+        }
+         
+        
+        
+       
+    </script>
+  <!--  
+    
+<p>The wheather today is <span id="content2"></span></p>  
+<p id="content3"></p> 
+    
+    <script>
+       // alert ("Welcome to the wheather predictor!");
+        
+    let = wheather1 = "rainning"; wheather2= "Wind"; wheather3 = "Sunny";
+    let x=5; y=6; z=x+y;
+    console.log(x);
+    console.log(y); 
+    console.log(z);  
+        
+        document.getElementById("content1").innerHTML="The wheather yesterday was "+wheather1;
+        document.getElementById("content2").innerHTML=wheather2;
+        document.getElementById("content3").innerHTML=wheather3;
+        
+        x=undefined;
+        console.log(x);
+    </script>
+
+-->
+    
+</body>
+</html>

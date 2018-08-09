@@ -1,0 +1,31 @@
+.codeImage {
+    opacity: 1;
+    display: block;
+    width: 80%;
+    height: auto;
+    transition: .5s ease;
+}
+
+/*The links in the galery*/
+.caption span.borderCode{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    letter-spacing: 10px;
+    font-size: 18px;
+    float: right;
+    position: relative;
+    bottom: 167px;
+    right: 100px;
+}
+
+/*Hover for change the colour of the button*/
+.caption span.borderCode:hover{
+    background-color: #BAA7A3;
+}
+
+/*Visited css for change the colour after clicked.*/
+span.borderCode.visited{
+    background-color: #BAA7A3;
+    color: black;
+}

@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head title="Task 10">
+    </head>
+    <script>
+        function submitTest(){
+            alert("sending email!");
+        }
+    </script>
+    <body>
+        <form action="mailto:tiago.xiquin@gmail.com" method="post" enctype="text/plain">
+            Login:<br />
+            <input type="text" id="login" name="login">
+            <br />
+            Password:<br />
+            <input type="password" id="password" name="password">
+            <br />
+            <br />
+            Name:<br />
+            <input type="text" id="name" name="fname">
+            <br />
+            Surname:<br />
+            <input type="text" id="surname" name="lname">
+            <br />
+            <br />
+            Email:<br />
+            <input type="text" id="email" name="email" />
+            Do you want to receive our offers?<input type="checkbox" name="subscription" value="yes" checked>        
+            <br />
+            <br />
+            <textarea id="commentArea" rows="10" cols="100" onfocus="if(this.value == 'Type your comment here...'){this.value = '';}" onblur="if(this.value == ''){this.value='Type your comment here...';}" ></textarea>
+            <br />
+            <br />
+            <button id="submitButton" onclick="submitTest()">Submit Email</button>      
+        </form>
+    </body>
+</html>

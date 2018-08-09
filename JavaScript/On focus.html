@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>On Focus</title>    
+</head>
+    <style>
+        border 1px black solid;
+
+    </style>
+<body>
+
+    <form>
+    <h1>Contact Form</h1>
+        First name: <input type="text" id="fn" value="First Name" onfocus="focus1()" onblur="blur1()"><br>
+         
+        Last name: <input type="text" id="ln" value="Last Name" onfocus="focus2()" onblur="blur2()"><br>
+        
+        May we contatct you? <input type="checkbox" name="permission" id="contact"><br>
+    </form>
+<script>
+    
+    function focus1(){
+        let firstname=document.getElementById("fn").value;
+        if(firstname=="First Name"){
+            document.getElementById("fn").value="";
+        }
+    }
+    
+    function blur1(){
+        let firstname=document.getElementById("fn").value;
+        if(firstname==""){
+            document.getElementById("fn").value="First Name";
+            
+        }
+    }
+    
+    
+    function focus2(){
+        let lastname=document.getElementById("ln").value;
+        if(lastname=="Last Name"){
+            document.getElementById("ln").value="";
+        }
+    }
+    
+    function blur2(){
+        let lastname=document.getElementById("ln").value;
+        if(lastname==""){
+            document.getElementById("ln").value="Last Name";
+            
+        }
+    }
+</script>
+
+</body>
+</html>

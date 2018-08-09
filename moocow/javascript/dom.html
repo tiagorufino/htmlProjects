@@ -1,0 +1,18 @@
+<!DOCUMENT html>
+<html>
+    <head title="The Document Object Modewl"></head>
+    <script>
+        alert("Header is a head of the document or paragraf.");
+    </script>
+    <body>
+        <h1 id="header">Welcome</h1>
+        <p id="hidden1">This site uses javaScript</p>
+        <p id="hidden2">JavaScript is useful</p>
+        <script>
+            document.getElementById("header").innerHTML="The Document Object Model is a tree-like structure that represents all elements on a webpage.";
+            console.log(document.getElementById("hidden1"));
+            document.getElementById("hidden2").style.disply="none";
+            document.getElementById("header").style.color = "blue";
+        </script>
+    </body>
+</html>

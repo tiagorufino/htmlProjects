@@ -1,0 +1,20 @@
+.contactClass{
+    float: left;
+}
+
+.frameClass{
+    float: right;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .contactClass{
+        float: none;
+    }
+
+    .frameClass{
+        float: none;
+    }
+    
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>On Click</title>
+    
+    <style>
+        input{
+            border-color: black;
+            border-width: 2px;
+        }
+    </style>
+</head>  
+<body>
+    
+    <input type="text" id="myinput" value="demo">
+    <h1 id="demo">This is JavaScript</h1>
+    <button id="button">Click Me!</button>
+    
+    <script>
+    
+    document.getElementById("button").onclick=function(){
+        document.getElementById("demo").innerHTML=
+        document.getElementById("myinput").value;
+    }
+    </script>
+    
+</body>
+</html>

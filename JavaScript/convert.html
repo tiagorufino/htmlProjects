@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To Celsius</title>    
+</head>
+    <body>
+    
+   <h1>What is the temperature?</h1>
+    Temperature in Celsius:<input type="text" value="32" id="temp">
+        <button onclick="convert()">Click to convert</button>
+        <h2 id="demo"></h2>
+    
+        <script>
+        function toCelsius (fahrenherit){
+            return Math.round((5/9)*(fahrenherit-32));
+            
+        }
+            
+        function convert(){
+            let fahrenheit=document.getElementById("temp").value;
+            document.getElementById("demo").innerHTML="The temperature is "+toCelsius(fahrenheit) + " degrees Celsius";
+        }
+        </script>
+    
+    
+    </body>
+</html>

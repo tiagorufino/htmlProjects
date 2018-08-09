@@ -1,0 +1,31 @@
+<!DOCUMENT html>
+<html>
+    <head title="JS Variables">
+    </head>
+    <body>
+        <h1>What is today`s weather like?</h1>
+        <p id="content1"></p>
+        <p id="content2"></p>
+        <p id="content3"></p>
+        <script>
+            let weather1="rain";
+            let weather2="sun";
+            let weather3="storm";
+            var x = Math.floor((Math.random() * 3) + 1);
+            if(x==1){
+                document.getElementById("content1").innerHTML=weather1;    
+                document.getElementById("content2").innerHTML=weather2;    
+                document.getElementById("content3").innerHTML=weather3;    
+            } else if (x == 2){
+                document.getElementById("content1").innerHTML=weather2;    
+                document.getElementById("content2").innerHTML=weather3;    
+                document.getElementById("content3").innerHTML=weather1;    
+            } else  if (x == 3){
+                document.getElementById("content1").innerHTML=weather3;    
+                document.getElementById("content2").innerHTML=weather1;    
+                document.getElementById("content3").innerHTML=weather2;    
+            }
+            
+        </script>
+    </body>
+</html>
