@@ -7,6 +7,13 @@ body, html {
     width: 100%;
 }
 
+.imageLogo{
+    width: 163px;
+    position: absolute;
+    right: auto;
+    opacity: 0.9;
+}
+
 /*Defination for the images in the page.*/
 .image_1, .image_2, .image_3, .image_4, .image_5 {
     position: relative;
@@ -80,7 +87,19 @@ body, html {
     overflow: hidden;
 }
 
-/*The contacxt div. Depends for the contents also*/
+/*The external page will be opened in this div. Open the page aboutMe*/
+.conteudoAboutMe{
+    height: auto;
+    overflow: hidden;
+}
+
+/*The external page will be opened in this div. Open the page Contact*/
+.conteudoContact{
+    height: auto;
+    overflow: hidden;
+}
+
+/*The contact div. Depends for the contents also*/
 .div_4 {
     color: white;
     background-color:#282E34;
@@ -106,13 +125,13 @@ body, html {
     letter-spacing: 10px;
 }
 
-/**/
+/*Title galery*/
 .caption span.border3{
     position: relative;
     bottom: 162px;
 }
 
-/*The links in the galery*/
+/*The link in the galery*/
 .caption span.border4{
     background-color: #111;
     color: #fff;
@@ -124,9 +143,9 @@ body, html {
 }
 
 /*The tank you topic. It is located in the bottom*/
-.caption span.border5{
+.caption span.border {
     position: relative;
-    bottom: -310px;
+    bottom: -308px;
 }
 
 /*Define the introdution size and colour*/
@@ -134,11 +153,6 @@ h3 {
     letter-spacing: 5px;
     text-transform: uppercase;  
     color: #111;
-}
-
-/*Define the color of the rodape*/
-.rodape{
-    background-color:white;
 }
 
 /*Hover for change the colour of the button*/
@@ -163,13 +177,31 @@ span.borderCode.visited{
     color: black;
 }
 
-/* For IPad and screens with 768 x 1024 */
+/*Define the color of the rodape*/
+.rodape{
+    background-color:white;
+}
+
+/*msg fromt he rodape*/
+.rodapeMsg{
+    float: left;
+    position:  absolute;
+    left: 419px;
+    width: 501px;;
+}
+
+/*audio from the rodape*/
+.rodapeAudio{
+    float: right;
+    width: 354px;
+}
+
+/* For IPad Pro and screens with 768 x 1024 */
 @media only screen and (max-device-width: 1024px) {
     /*Change the configuration for tables. The images roll in scroll mode and change the size.*/
     .image_1, .image_2, .image_3, .image_4, .image_5 {
         background-attachment: scroll;
-        width: 767px;
-        min-height: 786px;
+        width: 100%;
     }
     
     /*The font in the html and body change. start to be more round*/
@@ -180,48 +212,232 @@ span.borderCode.visited{
         color: #777;
     }
 
+    .image_1, .image_3{
+        min-height: 786px;
+    }
+    
     /*The iamges 2 and 4 have to be smarller*/
     .image_2, .image_4 {
-        width: 767px;
         min-height: 452px;
+    }
+    
+    .image_5{
+        min-height: auto;
     }
 
     /*The div 1 and 2 too.*/
     .div_1, .div_2 {
-        width: 589px;
+        width: auto;
         padding-left: 97px;
+    }
+    
+    /*Reorganize the position of the thankyou topic*/
+    .caption scan.border5{
+        position:relative;
+        bottom: auto;
+    }
+    
+    /*The topics general. Size of the font, colour, padding and spacing between the letters.*/
+    .caption span.border1, span.border2, span.border3  {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 49px;
+        letter-spacing: 10px;
+    }
+    
+    /*Title galery*/
+    .caption span.border3{
+        position: relative;
+        bottom: 246px;
+    }
+
+    /*The link in the galery*/
+    .caption span.border4{
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        letter-spacing: 10px;
+        font-size: 36px;
+        position: relative;
+        bottom: 226px;
     }
     
     /*The position of the topic need to be redenred*/
     .caption span.border {
         position:relative;
-        bottom:29px;
+        bottom: -212px;
+    }
+    
+    /*The external page will be opened in this div. Fixed the issue in the css which make the content pass over the div*/
+    .conteudo{
+        height: auto;
+        overflow: hidden;
     }
 
-    /*Reorganize the position of the thankyou topic*/
-    .caption scan.border5{
-        position:relative;
-        bottom: -146px;
+    /*The external page will be opened in this div. Open the page aboutMe*/
+    .conteudoAboutMe{
+        height: auto;
+        overflow: hidden;
+    }
+
+    /*The external page will be opened in this div. Open the page Contact*/
+    .conteudoContact{
+        height: auto;
+        overflow: hidden;
+    }
+
+    .rodapeAudio{
+        visibility: hidden;
+    }   
+
+    .rodapeMsg{
+        float: left;
+        position:  absolute;
+        left: 257px;
+        width: 532px;
     }
 }
 
-/* For phones */
-@media only screen and (max-device-width: 414px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-    .details{
-        background-color: #4CAF50;
-        padding: 6px 7px;
-        width: 230px;
-        text-align: left
-        text-align: inherit;
-    }
+/* For Iphone 6/7/8 and screens with resolution 375x667 */
+@media only screen and (max-device-width: 414px) {  
+    /*The font in the html and body change. start to be more round*/
     body, html {
         height: 100%;
+        min-width: auto;
         margin: 0;
-        font: 400 15px/1.8 "Arial", sans-serif;
+        font: 400 15px/1.8 "Galada", sans-serif;
         color: #777;
-        width: 117%;
     }
+    
+    .imageLogo{
+        width: 94px;
+    }
+    
+    /*Change the configuration for tables. The images roll in scroll mode and change the size.*/
+    .image_1, .image_2, .image_3, .image_4, .image_5 {
+        background-attachment: scroll;
+        min-width: 400px;
+    }
+
+    .image_1, .image_3{
+        min-height: 341px;
+    }
+    
+    /*The iamges 2 and 4 have to be smarller*/
+    .image_2, .image_4 {
+        min-height: 257px;
+    }
+    
+    .image_5{
+        min-height: auto;
+        height: 203px;
+    }
+
+    /*The div 1 and 2 too.*/
+    .div_1, .div_2 {
+        width: 339px;
+        padding-left: 32px;
+        padding-right: 29px;
+    }
+    
+    /*The div 1 and 2 too.*/
+    .div_3, .div_4 {
+        width: 254px;
+        padding-top: 10px;
+        padding-bottom: 96px;
+        padding-left: 65px;
+    }
+    
+    /*hidden the maps and the pictures*/
+    .map, .animationPicures {
+        visibility: hidden;
+    }
+    
+    /*The position of the div which has the topics */
+    .caption {
+        position: absolute;
+        top: 38%;
+    }
+    
+    /*Reorganize the position of the thankyou topic*/
+    .caption scan.border5{
+        position:relative;
+        bottom: auto;
+    }
+    
+    /*The topics general. Size of the font, colour, padding and spacing between the letters.*/
+    .caption span.border1, span.border2, span.border3  {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 21px;
+        letter-spacing: 10px;
+    }
+    
+    /*Title galery*/
+    .caption span.border3{
+        position: relative;
+        bottom: 111px;
+    }
+
+    /*The link in the galery*/
+    .caption span.border4{
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        letter-spacing: 10px;
+        font-size: 12px;
+        position: relative;
+        bottom: 120px;
+    }
+    
+    /*The position of the topic need to be redenred*/
+    .caption span.border {
+        position:relative;
+        bottom: -96px;
+        font-size: 12px;
+    }
+    
+    /*The external page will be opened in this div. Fixed the issue in the css which make the content pass over the div*/
+    .conteudo{
+        height: auto;
+        overflow: hidden;
+    }
+
+    /*The external page will be opened in this div. Open the page aboutMe*/
+    .conteudoAboutMe{
+        height: 713px;
+        overflow: hidden;
+    }
+
+    /*The external page will be opened in this div. Open the page Contact*/
+    .conteudoContact{
+        height: auto;
+        overflow: hidden;
+    }
+    
+    /*change the signute size*/
+    .imageSing{
+        width: 285px;
+    }
+    
+    /*Define the introdution size and colour*/
+    h1 {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    
+    .rodapeMsg{
+        float: left;
+        position:  absolute;
+        left: 35px;
+        width: 320px;
+    }
+
+    .rodapeAudio{
+        visibility: hidden;
+    }
+
 }

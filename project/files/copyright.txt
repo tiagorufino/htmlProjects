@@ -1,0 +1,56 @@
+Codes-based to create the website
+https://www.w3schools.com/w3css/w3css_slideshow.asp
+https://www.w3schools.com/tags/att_audio_autoplay.asp
+https://www.scriptbrasil.com.br/forum/topic/94541-p%C3%A1gina-html-dentro-de-outra/
+https://www.w3schools.com/css/css3_animations.asp
+https://htmlcolorcodes.com/
+https://www.sitepoint.com/community/t/div-height-based-on-content/17309/3
+https://www.tutorialspoint.com/How-to-load-external-HTML-into-a-div-using-jQuery
+https://www.w3schools.com/html/html_entities.asp
+https://www.w3schools.com/graphics/google_maps_basic.asp
+https://forum.imasters.com.br/topic/242792-colocar-div-na-frente/
+
+Music
+"Laser Groove" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+https://incompetech.com/music/royalty-free/music.html
+
+Created by me
+GOPR2431.mp4
+GOPR2449.mp4
+GOPR2549.mp4
+20160811_133504.jpg
+GOPR2505.jpg
+GOPR2681.jpg
+GOPR2696.jpg
+IMG_4655.jpg
+IMG_5170.jpg
+Bohemia_1.jpg
+bohemia_final.jpg
+historical_2.jpg
+historical_final.jpg
+modern_0.jpg
+modern_1.jpg
+modern_2.jpg
+modern_3,jpg
+modern_4.jpg
+modern_final.jpg
+fundo_cliffs.jpg
+fundo_leblon.jpg
+fundo_river.jpg
+fundo_sligo.jpg
+logo_rufinos.jpg
+me.jpg
+sign.png
+logos.png
+instagram.png
+facebook.png
+
+Screenshots
+webdesign.png
+beerApp.png
+rpg.png
+sistema.png
+git.png
+githup_mainPage.png

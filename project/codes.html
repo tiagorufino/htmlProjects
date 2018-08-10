@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/contact.css">
-        <script>
-            $(document).ready(function(){   
-                $('span.borderCode').click(function(){
-                      $(this).addClass("visited");
-                });
-
-            });
-        </script>
-    </head>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/codes.css">
+    <script src="lib/jquery-3.2.1.js"></script>
+    <script src="lib/jquery-3.2.1.min.js"></script>
     <body>
-        <div id="codes">
+        <div>
             <article>
                 <p>This is my Git Hub. Here will be possible to find some projects and randomly codes.<br>
 
@@ -23,15 +15,48 @@
                 </p>
             </article>
             <div>
-                <div style="float: left">
-                    <img class="codeImage" src="images/codes/git.PNG" width="400px" height="400px"/>
-                </div> 
+                <!-- My slide show automatic -->
+                <div class="slideShow">
+                    <img class="codeImage" alt="Git Home Page" src="images/codes/git.PNG">
+                    <img class="codeImage" alt="Git Sistema App" src="images/codes/sistema.PNG">
+                    <img class="codeImage" alt="Git Beer App" src="images/codes/beerApp.PNG">
+                    <img class="codeImage" alt="Git BSC Projects" src="images/codes/BSC.PNG">
+                    <img class="codeImage" alt="Git RPG Project" src="images/codes/rpg.PNG">
+                    <img class="codeImage" alt="Git WebDesing Project" src="images/codes/webdesign.PNG">
+                </div>
                 <div>
+                    <!-- Link for my git hub -->
                     <div class="caption">
-                    <a href="https://github.com/tiagorufino"  target="_blank"><span class="borderCode" >GIT HUB</span></a>
-                    </divs>
+                        <a href="https://github.com/tiagorufino"  target="_blank"><span class="borderCode" >GIT HUB</span></a>
+                    </div>
                 </div>
             </div>
         </div>
+        <script>
+            //slide function
+            //first position of my vector of images
+            var myIndex = 0;
+            //function
+            carousel();
+            
+            function carousel() {
+                var i;
+                //getting the vector of images
+                var x = document.getElementsByClassName("codeImage");
+                //running througth the vector
+                for (i = 0; i < x.length; i++) {
+                    //setting the display of the images
+                   x[i].style.display = "none";  
+                }
+                //change the index
+                myIndex++;
+                //if the index is the size of the vector change the index to 1
+                if (myIndex > x.length) {myIndex = 1}    
+                //the previous image is set as block
+                x[myIndex-1].style.display = "block";  
+                //set the time for call the function
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
     </body>
 </html>

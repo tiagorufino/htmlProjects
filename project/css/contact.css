@@ -1,20 +1,40 @@
+/*The contact block position*/
 .contactClass{
     float: left;
 }
 
-.frameClass{
+/*The links position*/
+.linksClass{
     float: right;
+    position: relative;
+    right: 96px;
 }
 
 
-/* Turn off parallax scrolling for tablets and phones */
+/* For IPad Pro and screens with 768 x 1024 */
 @media only screen and (max-device-width: 1024px) {
     .contactClass{
         float: none;
     }
 
-    .frameClass{
+    .linksClass{
         float: none;
+        position: relative;
+        right: -288px;
+    }
+    
+}
+
+/* For Iphone 6/7/8 and screens with resolution 375x667 */
+@media only screen and (max-device-width: 414px) {
+    .contactClass{
+        float: none;
+    }
+
+    .linksClass{
+        float: none;
+        position: relative;
+        right: 0px;
     }
     
 }

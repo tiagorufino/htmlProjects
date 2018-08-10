@@ -1,15 +1,14 @@
+/*the divs with the images.*/
 #div1, #div2, #div3, #div4, #div5, #div6{
-    width: 100px;
+    width: 153px;
     height: 90px;
     font-weight: bold;
     position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
     text-align: left;
-    animation: mymove 4s 0s infinite;
+    animation: leftToRight 4s 0s infinite;
 }
 
-/* Standard syntax */
+/* The time of the animation. I setted 2 groups of 3 images in the same time */
 #div1 {animation-delay: 0s;}
 #div2 {animation-delay: 2s;}
 #div3 {animation-delay: 0s;}
@@ -17,16 +16,58 @@
 #div5 {animation-delay: 0s;}
 #div6 {animation-delay: 2s;}
 
-/* Standard syntax */
-@keyframes mymove {
-    from {left: -500px}
-    to {left: -80px;}
+/* The animation sintax. Left to the right*/
+@keyframes leftToRight {
+    from {left: -428px}
+    to {left: -0px;}
 }
 
+#div1:hover, #div2:hover, #div3:hover, #div4:hover, #div5:hover, #div6:hover {
+    animation-play-state: paused;
+}
+
+/*The articla position*/
 .articleClass{
     float: left;
 }
 
-.sideGalery{
+/*the animation position*/
+.animationPicures{
     float: right;
+}
+
+/*Maps from my city. Small and in the right of the left content*/
+.map{
+    width: 200px;
+    height: 200px;
+    right: 86px;
+    float: right;
+    position: relative;
+    bottom: 71px;
+}
+
+/* For IPad Pro and screens with 768 x 1024 */
+@media only screen and (max-device-width: 1024px) {
+    /*the divs with the images.*/
+    #div1, #div2, #div3, #div4, #div5, #div6{
+        width: 153px;
+        height: 190px;
+        font-weight: bold;
+        position: relative;
+        text-align: left;
+    }
+    
+    /* Remove the animmation from the pictures*/
+    @keyframes leftToRight {
+        
+    }
+    
+    .map{
+        width: 200px;
+        height: 200px;
+        right: 70px;
+        float: right;
+        position: relative;
+        bottom: 71px;
+    }
 }

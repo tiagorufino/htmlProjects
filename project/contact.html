@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/contact.css">
         <script>
+            //functions for clean the inputs
             function cleanFName(){
                 document.getElementById('fname').value='';
             }
@@ -18,8 +19,9 @@
     <body>
         <div>
             <p>Please sent a email or follow me in my social midias and share with me your opinion about my work.</p>
+            <!-- the contact div The email will be sent to tiago.xiquin"gmail.com-->
             <div class="contactClass">
-                <form action="mailto:tiag.xiquin@gmail.com" method="post" enctype="text/plain">
+                <form action="mailto:tiago.xiquin@gmail.com" method="post" enctype="text/plain">
                     First Name:<br>
                     <input id="fname" type="text" name="fname"  value="First name..." onclick="cleanFName()" onfocus="if(this.value == 'First Name...'){this.value = '';}" onblur="if(this.value == ''){this.value='First Name...';}"><br>
                     Last Name:<br>
@@ -27,16 +29,21 @@
                     E-mail:<br>
                     <input id="email" type="email" name="email" value="E-mail" onclick="cleanEmail()" onfocus="if(this.value == 'E-mail...'){this.value = '';}" onblur="if(this.value == ''){this.value='E-mail...';}"><br>
                     Comment:<br>
-                    <textarea id="commentArea" rows="10" cols="70" value="" onfocus="if(this.value == 'Type your comment here...'){this.value = '';}" onblur="if(value == ''){value='Type your comment here...';}" >Type your comment here...</textarea><br>
+                    <textarea name="comments" rows="10" cols="70" value="" onfocus="if(this.value == 'Type your comment here...'){this.value = '';}" onblur="if(value == ''){value='Type your comment here...';}" >Type your comment here...</textarea><br>
+                    <!-- Submit button. Send all the informations typed in the forms fname, lnamel, email and comments -->
                     <input type="submit" value="Send">
+                    <!-- Clean the forms. -->
                     <input type="reset" value="Reset">
                 </form>
             </div>
-            <div class="frameClass">
+            <!-- links from the social midia-->
+            <div class="linksClass">
+                <!-- instagram -->
                 <a href="https://www.instagram.com/tiago_xiquin/" target="_blank">
                     <img src="images/logos/instagram.png" width="320px" height="240px">
                 </a>
                 <br>
+                <!-- facebook-->
                 <a href="https://www.facebook.com/tiago.rufino" target="_blank">
                     <img src="images/logos/facebook.PNG"  width="320px" height="240px">
                 </a>

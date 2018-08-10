@@ -4,10 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/visualCommunication.css">
     </head>
-    <body>
+    <!-- I had created a class for the galery body because the sice of the images. -->
+    <body class="galleryBody">
         <h1>Visual Communication</h1>
         <article class="articleClass">
-            <p>The Visual Communication Subject is a subject which teach us <br>
+            <p>The Visual Communication is a subject which teach us <br>
             about the way to communicate and share this information.<br>
                 <br>
             The  way the people understand the information and how they share that.<br>
@@ -16,69 +17,115 @@
             to see the evolution and the changes in the images and the colours<br>
             also the way I had see the frames and the components, lines, dots, etc. <br>
             <br>
-             I would like to inser some pictures which I had taken but those<br>
+             I would like to insert some pictures which I had taken but those<br>
             will not be part of the subject.  
             </p>
+            <br>          
+            <br>          
+            <br>          
             <br>
+
+            <h2>Final Assessment </h2>
+            <br>
+            <p>In the end of the course I did a journal with all <br>
+            the information I have learned durint the course.<br>
+            <br>
+            The journal has information about colour, pictures, <br> 
+            frames, video, photo editions, history, ads, propaganda,<br> 
+            cinema, systems used, technologies, differents patterns and <br>
+            ways to see the image in our wolrd.<br>
+                
+            </p>
         </article>
+        <!-- My side of the galery. It's possible to pass througth the images-->
         <div class="sideGalery">
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/bohemia_final.jpg" class="pictures">
+                <div id="caption">Bohemia PostCard</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/historical_2.jpg" class="pictures">
+                <div id="caption">Historical PostCard 2</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/historical_final.jpg" class="pictures">
+                <div id="caption">Historical Postcard Final</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/modern_0.jpg" class="pictures">
+                <div id="caption">Modern Postcard option 1</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/modern_1.jpg" class="pictures">
+                <div id="caption">Modern Postcard option 2</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/modern_2.jpg" class="pictures">
+                <div id="caption">Modern Postcard option 3</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/modern_3.jpg" class="pictures">
+                <div id="caption">Modern Postcard option 4</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/modern_4.jpg" class="pictures">
+                <div id="caption">Modern Postcard option 5</div>
             </div>
-            <div class="mySlides">
+            <div class="pictureDiv">
                 <img src="images/gallery/modern_final.jpg" class="pictures">
+                <div id="caption">Modern Postcard Final</div>
             </div>
             <div>
+                <!-- next button -->
                 <a onclick="nextPicture(-1)">&#10094;</a>
+                <!-- previous button -->
                 <a onclick="nextPicture(1)" style="float: right">&#10095;</a>
+                <br>
+                <br>
+                <div class="captionVC">
+                    <a href="files/Journal.pdf" download><span class="borderButtom">DONWLOAD JORNAL.PDF</span></a>
+                </div>
             </div>
+            <br>
+            <br>
+            <object class="objectPdf" data="files/Journal.pdf"></object>
         </div>
         <script>
+            //index start with 1
             var counter = 1;
+            //function
             runPictures(counter);
 
+            //if the button is clicked it is set the picture from the position in the vector
             function nextPicture(n) {
                 runPictures(counter += n);
             }
 
+            //return the current picture from the position in the vector
             function currentSlide(n) {
                 runPictures(counter = n);
             }
 
+            //run the vector
             function runPictures(n) {
                 var i;
-                var slides = document.getElementsByClassName("mySlides");
+                //get the vector
+                var slides = document.getElementsByClassName("pictureDiv");
+                //get the caption from the iamge
                 var captionText = document.getElementById("caption");
+                //if the position is equal of the size, come back to the beguin
                 if (n > slides.length) {
                     counter = 1
                 }
+                //if the position is emaller than 1 come banck to the end
                 if (n < 1) {
                     counter = slides.length
                 }
+                //run the vectoc setting the pictures display as none
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
+                //display block for previou image
                 slides[counter-1].style.display = "block";
             }
         </script>

@@ -3,28 +3,39 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/codes.css">
         <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="lib/jquery-3.2.1.js"></script>
+        <script src="lib/jquery-3.2.1.min.js"></script>
         <script>
+            //set my button to visited
             $(document).ready(function(){   
+                //load the aboutMe content
                 $('#aboutMe').load("aboutMe.html");
+                //load the contact content
                 $('#contact').load("contact.html");
+                //add to the border4 the visited colour
                 $('span.border4').click(function(){
                       $(this).addClass("visited");
                 });
+                $('span.borderCode').click(function(){
+                  $(this).addClass("visited");
+                });
             });
-            function visualPage(){
-                window.location.href="firstPage.html";
-            }
-            function carregar(pagina){                
+            
+            //load the pages sent as a `pagina`
+            function carregar(pagina){   
+                //load the page in the div 
                 $("#conteudo").load(pagina);
             }
         </script>
     </head>
     <body>
+        <!-- begin for the paralax. First image -->
+        
         <div class="image_1">
+            <img class="imageLogo" alt="logo" src="images/logos/logo_rufinos.jpg" />
+            <!-- The topics -->            
             <div class="caption">
                 <p><span class="border1">Tiago Rufino</span></p>
                 <br>
@@ -36,70 +47,88 @@
                 <br>
             </div>
         </div>
+        <!-- The first Div with the content from the topic -->
         <div class="div_1">
             <h3 style="text-align:center;">Introduction</h3>
             <p>This website will show all the information, projects and works done since I had started the course BSC in the Dorset College.</p>
             <p>My Name is Tiago Rufino and I hope you enjoy your time here.</p>
             <p>Thanks</p>
-            <span><img src="images/index/sign.PNG"></span>
+            <!-- Signature -->
+            <span ><img class="imageSing" alt="Signature" src="images/index/sign.PNG"></span>
         </div>
+        <!-- second image -->
         <div class="image_2">
+            <!-- The topics -->
             <div class="caption">
                 <span class="border2">About me</span>
             </div>
         </div>
-        <div style="position:relative;">
+        <!-- The second with the content from the topic. -->
+        <div>
             <div class="div_2">
-                <div class="conteudo">
+                <!-- external content from other html page aboutMe.html -->
+                <div class="conteudoAboutMe">
                     <div id="aboutMe"></div>
                 </div>
             </div>
-        </div>        
+        </div>   
+        <!-- Third image -->
         <div class="image_3">
             <div class="caption">
                 <p><span class="border3">Gallery</span></p>
                 <br>   
                 <br>
+                <!-- Links -->
                 <p><span class="border4" onclick="carregar('codes.html')" >Programing</span></p>
                 <br>
                 <p><span class="border4" onclick="carregar('visualCommunication.html')" >Visual Communication</span></p>
             </div>
         </div>
+        <!-- The third with the content from the topic. -->
         <div style="position:relative;">
             <div class="div_3">  
+                <!-- external content from other html choose from the links -->
                 <div class="conteudo" id="conteudo"><h2>Please click in the links to see more informations</h2></div>
             </div>
         </div>
+        <!-- fourth image -->
         <div class="image_4">
             <div class="caption">
-                <span class="border">CONTACT</span><br><br><br>              
+                <span class="border2">CONTACT</span><br><br><br>              
             </div>
         </div>
         <div style="position:relative;">
             <div class="div_4"> 
-                <div class="conteudo">
+                <!-- external content from other html page contact.html -->
+                <div class="conteudoContact">
                     <div id="contact"></div>
                 </div>
             </div>            
         </div>
+        <!-- fiveth image -->
         <div class="image_5">
             <div class="video">
+                <!-- video as a background in the last frame -->
                 <video width="100%" height="100%" preload="auto" autoplay="true" loop="loop" muted="muted"> 
                     <source src="audio_video/GOPR2549.MP4" type="video/mp4">
                 </video>
             </div>
-        
+            <!-- Topic bye bye hahah-->
             <div class="caption">
-                <span class="border5">THANK YOU!!</span>                
+                <span class="border">THANK YOU!!</span>                
             </div>
         </div>
+        <!-- Rodape div -->
         <div class="rodape">
-            <center>
-                <p> WebSite created by Tiago Rufino , Copyright &copy; 2018</p>                
-            </center>
-            <audio autoplay>
-              <source src="audio_video/WEKEED%20-%20Wild%20Child.mp3" type="audio/mpeg">
-            </audio>
+            <!-- Audio for the page, I have hidden the controls. I do not like how looks like. Free song-->
+            <div class="rodapeAudio">
+                <audio controls autoplay loop>
+                    <source  src="audio_video/Laser%20Groove.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="rodapeMsg">
+                <p> WebSite created by Tiago Rufino , Copyright &copy; 2018</p>
+            </div>
         </div>
     </body>
 </html>

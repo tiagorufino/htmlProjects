@@ -1,14 +1,6 @@
-.codeImage {
-    opacity: 1;
-    display: block;
-    width: 80%;
-    height: auto;
-    transition: .5s ease;
-}
-
-/*The links in the galery*/
+/*The link for the git hub*/
 .caption span.borderCode{
-    background-color: #111;
+    background-color: #BAA7A3;
     color: #fff;
     padding: 18px;
     letter-spacing: 10px;
@@ -16,16 +8,39 @@
     float: right;
     position: relative;
     bottom: 167px;
-    right: 100px;
+    right: 105px;
 }
 
-/*Hover for change the colour of the button*/
-.caption span.borderCode:hover{
-    background-color: #BAA7A3;
+/*images for the slideshow*/
+.codeImage {
+    width:100%;
+    display:none;
 }
 
-/*Visited css for change the colour after clicked.*/
-span.borderCode.visited{
-    background-color: #BAA7A3;
-    color: black;
+/*size and position of the slide show*/
+.slideShow{
+    max-width: 839px;
+    float: left;
+}
+
+/* For IPad Pro and screens with 768 x 1024 */
+@media only screen and (max-device-width: 1024px) {
+        /*The link for the git hub*/
+    .caption span.borderCode{;
+        float: right;
+        position: relative;
+        bottom: 140px;
+        right: 105px;
+    }
+}
+
+/* For Iphone 6/7/8 and screens with resolution 375x667 */
+@media only screen and (max-device-width: 414px) {
+        /*The link for the git hub*/
+    .caption span.borderCode{;
+        float: right;
+        position: relative;
+        bottom: -185px;
+        right: 95px;
+    }
 }

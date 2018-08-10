@@ -1,44 +1,146 @@
-body{
-    height: 400px;
-}
-
+/*size of the body with the article and the gallery*/
+/*position of the article*/
 .articleClass{
     float: left;
 }
 
+/*size of the pictures*/
 .pictures{
     width: 480px;
     height: 360px;
 }
 
-.mySlides{
+/*Position of the div of the picture.*/
+.pictureDiv{
     text-align: left;
 }
 
+/*Position of all the slide pictures*/
 .sideGalery{
     float: right;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
+.objectPdf{
+    width: 400px;
+    height: 400px;
+}
+
+.captionVC{
+    visibility: hidden;
+}
+
+span.borderButtom{
+    visibility: hidden;
+}
+
+/* For IPad Pro and screens with 768 x 1024 */
 @media only screen and (max-device-width: 1024px) {
     
-    body{
-        height: 587px;
+    .galleryBody{
+        height: 307px;
     }
     .pictures{
         width: 360px;
         height: 240px;
     }
     
-    .articleClass{
-        float: none;
+    .sideGalery{
+        bottom: 777px;
+        width: 364px;
+        top: 46%;
+        position: absolute;
+        right: 100px;
+    }
+    
+    .mySlides{
+        text-align: center;
+    }
+    
+    .objectPdf{
+        visibility: hidden;
+    }
+    
+    /*The position of the div which has the topics */
+    .captionVC {
+        visibility: visible;
+        position: absolute;
+        left: 325px;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    span.borderButtom{
+        visibility: visible;
+    }
+    
+    /*The topics general. Size of the font, colour, padding and spacing between the letters.*/
+    .captionVC span.borderButtom {
+        background-color: #BAA7A3;
+        color: black;
+        padding: 18px;
+        font-size: 29px;
+        letter-spacing: 10px;
+        position: relative;
+        bottom: -475px;
+        right: 245px;
+    }
+    
+}
+
+/* For Iphone 6/7/8 and screens with resolution 375x667 */
+@media only screen and (max-device-width: 414px) {
+    
+    .galleryBody{
+        height: 307px;
+    }
+    .pictures{
+        width: 254px;
+        height: 163px;
     }
     
     .sideGalery{
-        float: none;
+        bottom: 777px;
+        width: 253px;
+        top: 46%;
+        position: absolute;
+        right: 62px;
     }
+    
     .mySlides{
         text-align: center;
+    }
+    
+    .objectPdf{
+        visibility: hidden;
+    }
+    
+    /*The position of the div which has the topics */
+    .captionVC {
+        visibility: visible;
+        position: absolute;
+        left: 325px;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+
+    span.borderButtom{
+        visibility: visible;
+    }
+    
+    /*The topics general. Size of the font, colour, padding and spacing between the letters.*/
+    .captionVC span.borderButtom {
+        background-color: #BAA7A3;
+        color: black;
+        padding: 7px;
+        font-size: 15px;
+        letter-spacing: 10px;
+        position: relative;
+        bottom: -579px;
+        right: 320px;
     }
     
 }

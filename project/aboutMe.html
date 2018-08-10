@@ -3,53 +3,65 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/aboutMe.css">
+        <script>
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(-19.903168, -43.967530),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID,
+                    disableDefaultUI: true
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+        <!-- My apiKey from the google api-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlyRyDhee3JdhfshaLAL8slfJPb_FxneY&callback=myMap"></script>
     </head>
     <body>
-        <h1>My name is Tiago Ferreira Lima Rufino</h1>
+        <h1>Hi, welcome to my portfolio.</h1>
         <article class="articleClass">
-            <p>I am from Belo Horizonte. The third big city in my country. <br>
-            I am 36 years old and I am libing in Dublin since 2015.<br>
+            <!-- first line with the map from my city -->
+            <p>I am from Belo Horizonte.</p><div id="map" class="map"></div>
             <br>
-            Effective team approach and problem analyze. I like to work <br> 
-            directed to the evolution of the team within the project.<br>
-            Dynamic and clear(sometimes too much clear), having facility<br>
-            of communication between different niveis of knowledge.<br>
+            <p>I am 36 years old and <br>
+            <p>I am living in Dublin since 2015.</p>
+            <p>In my profession I like to work with <br>effective team approach and problem analyze.</p>
+            <p>I like to work directed to the evolution of the team within <br>the project. I am dynamic and clear (sometimes too much clear), <br>having facility of communication between different levels <br>of knowledge.</p>
             <br>
-            I have differents hobbies: travel, ride my longboard, new <br>
-            adventures, new places, new lives...<br>
+            <p>I have differents hobbies: travel, ride my longboard, new </p>
+            <p>adventures, new places, new lives...</p>
             <br>
-            I like to think, play games, board games, card games, pub games,<br>
-            videos games, haha.<br>
+            <p>I like to think, play games, board games, card games, pub games,</p>
+            <p> videos games, haha.</p>
             <br>
             <br>
-            Welcome to my portifolio, the first one. =D<br>
-            <br>
+            <p>The first of many. =D</p>
             <br>
             <br>    
-            Enjoy your trip.
+            <p>Enjoy your trip.</p>   
+            <br>    
             </p>
-            <br>    
         </article>
-        <div class="sideGalery"> 
+        <!--My animation of picures -->
+        <div class="animationPicures"> 
             <div id="div1">
-                <img src="images/aboutMe/GOPR2696.JPG" style="width: 252px; height: 224px;">
+                <img alt="Sorry Image not Found" src="images/aboutMe/GOPR2696.JPG" style="width: 100%">
             </div>
             <div id="div2">
-                <img src="images/aboutMe/GOPR2505.jpg" style="width: 223px; height: 174px;">
+                <img alt="Sorry Image not Found" src="images/aboutMe/GOPR2505.jpg" style="width: 100%">
             </div>
             <div id="div3">
-                <img src="images/aboutMe/GOPR2681.JPG"  style="width: 189px; height: 183px;">
+                <img alt="Sorry Image not Found" src="images/aboutMe/GOPR2681.JPG" style="width: 100%">
             </div>
             <div id="div4">
-                <img src="images/aboutMe/IMG_4655.JPG"  style="width: 196px; height: 186px;">
+                <img alt="Sorry Image not Found" src="images/aboutMe/IMG_4655.JPG" style="width: 100%">
             </div>
             <div id="div5">
-                <img src="images/aboutMe/IMG_5170.JPG" style="width: 196px; height: 157px; transform: rotate(90deg);">
+                <img alt="Sorry Image not Found" src="images/aboutMe/IMG_5170.JPG" style="width: 100%; transform: rotate(90deg);">
             </div>
             <div id="div6">
-                <img src="images/aboutMe/20160811_133504.jpg" style="width: 146px; height: 195px;">
+                <img alt="Sorry Image not Found" src="images/aboutMe/20160811_133504.jpg" style="width: 100%">
             </div>
-        </div>
-        
+        </div> 
     </body>
 </html>
